@@ -3,14 +3,15 @@
 void setup() 
 {
   Serial.begin(9600);
-  pinMode(SW, INPUT); // digital Input/Output
+  pinMode(SW, INPUT);
 }
 
 void loop() 
 {
   int valSW = digitalRead(SW);
+  delay(10); //
   //bool valSW = digitalRead(SW);
 
   Serial.println(valSW);
-  delay(50); // 50ms
+  delay(50);
 }
